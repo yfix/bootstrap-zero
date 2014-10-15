@@ -5,7 +5,7 @@
       <div class="container">
           <div class="row">
             <div class="col-sm-7">
-              <h1>BootstrapZero <p class="lead"><span style="color:#CCFF33;">+Free</span> Themes and Templates for Bootstrap</p></h1>
+              <h1>Bootstrap <p class="lead"><span style="color:#CCFF33;"><%=utils.capitalize(tag)%></span> Themes and Templates</p></h1>
             </div>
             <div class="col-sm-5">
                 <!-- ad space -->
@@ -19,13 +19,65 @@
     
     <div class="container" id="main">
 	    <div class="row">
+	        <div class="col-md-12">
+      		  <hr>
+      			<h3>Browse by Tag</h3>
+                <p></p>
+                <h4>
+                    <a href="/bootstrap-templates/theme" class="label label-default" target="ext">theme</a> 
+                    
+                    <a href="/bootstrap-templates/scroll" class="label label-default" target="ext">scroll</a> 
+                    
+                    <a href="/bootstrap-templates/one-page" title="single page app templates" class="label label-default" target="ext">one-page</a> 
+                    
+                    <a href="/bootstrap-templates/admin" title="admin theme" class="label label-default" target="ext">admin</a> 
+                    
+                    <a href="/bootstrap-templates/background" class="label label-default" target="ext">background</a> 
+                    
+                    <a href="/bootstrap-templates/business" class="label label-default" target="ext">business</a> 
+                    
+                    <a href="/bootstrap-templates/dashboard" title="dashboard and control panel templates" class="label label-default" target="ext">dashboard</a> 
+                    
+                    <a href="/bootstrap-templates/full" class="label label-default" target="ext">full</a> 
+                    
+                    <a href="/bootstrap-templates/fixed" class="label label-default" target="ext">fixed</a> 
+                    
+                    <a href="/bootstrap-templates/google-maps" class="label label-default" target="ext">google-maps</a> 
+                    
+                    <a href="/bootstrap-templates/login" class="label label-default" target="ext">login</a> 
+                    
+                    <a href="/bootstrap-templates/form" class="label label-default" target="ext">form</a> 
+                    
+                    <a href="/bootstrap-templates/footer" class="label label-default" target="ext">footer</a>
+                    
+                    <a href="/bootstrap-templates/contact" class="label label-default" target="ext">modal</a> 
+                    
+                    <a href="/bootstrap-templates/navbar" class="label label-default" target="ext">navbar</a> 
+                    
+                    <a href="/bootstrap-templates/map" class="label label-default" target="ext">map</a> 
+                    
+                    <a href="/bootstrap-templates/lightbox" class="label label-default" target="ext">lightbox</a> 
+                    
+                    <a href="/bootstrap-templates/slider" class="label label-default" target="ext">slider</a> 
+                    
+                    <a href="/bootstrap-templates/gallery" class="label label-default" target="ext">gallery</a> 
+                    
+                    <a href="/bootstrap-templates/sidebar" class="label label-default" target="ext">sidebar</a> 
+                    
+                    <a href="/bootstrap-templates/affix" class="label label-default" target="ext">affix</a> 
+                    
+                    <a href="/bootstrap-templates/contact" class="label label-default" target="ext">contact</a> 
+
+                </h4>
+                <hr>
+      		</div>
       		<div class="col-md-12">
       			<h2><%=utils.capitalize(tag)%> Templates</h2>
                 <p>Kickstart your Bootstrap project with these free `<%=tag%>` templates and themes.</p>
                 <hr>
       		</div>
       	</div>
-      	<div class="row">
+      	<div class="row" id="listTemplates">
       	    <% for(i in templates) {%>
   			<div class="col-sm-4">
               	<div class="panel panel-default">
@@ -36,10 +88,11 @@
       		</div>
       		<% } %>
         </div>
+        <div class="text-center"><ul class="pagination pager" id="pagerTemplates"></ul></div>
         <div class="row">
       		<div class="col-md-12">
                 <a class="pull-right" href="http://www.bootply.com/tagged/<%=tag%>" rel="nofollow" target="ext">Bootstrap <b><%=tag%></b> snippets &amp; examples at Bootply</a>
-                <a href="https://wrapbootstrap.com/search?q=<%=tag%>&ref=bootply" rel="nofollow" target="_ext">More <b><%=tag%></b> themes at WrapBootstrap</a>
+                <a href="http://bootstrapbay.com/category/admin-dashboard?ref=skelly" rel="nofollow" target="_ext">More <b><%=tag%></b> themes at BootstrapBay</a>
       		</div>
       	</div>
     </div>
